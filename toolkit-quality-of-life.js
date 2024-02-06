@@ -1,7 +1,9 @@
 // ==UserScript==
 // @name         Toolkit Quality of Life
 // @namespace    https://www.toolkitwebsites.co.uk/
-// @version      0.1
+// @version      0.2
+// @updateURL    https://raw.githubusercontent.com/Will-Toolkit/Toolkit-Userscripts/main/toolkit-quality-of-life.js
+// @downloadURL  https://raw.githubusercontent.com/Will-Toolkit/Toolkit-Userscripts/main/toolkit-quality-of-life.js
 // @description  Small suite of improvements to the Toolkit platform for frontend devs.
 // @author       Will Thrussell
 // @match        https://www.toolkit.uk/*
