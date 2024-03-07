@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Toolkit Quality of Life
 // @namespace    https://www.toolkitwebsites.co.uk/
-// @version      0.2
+// @version      0.4
 // @updateURL    https://raw.githubusercontent.com/Will-Toolkit/Toolkit-Userscripts/main/toolkit-quality-of-life.js
 // @downloadURL  https://raw.githubusercontent.com/Will-Toolkit/Toolkit-Userscripts/main/toolkit-quality-of-life.js
 // @description  Small suite of improvements to the Toolkit platform for frontend devs.
@@ -20,6 +20,9 @@
         imagesQuickCopy: true,
         graphicsQuickCopy: true,
         webmasterTextAreaFix: true,
+        formNotificationsAbsolute: true,
+        resizeCodeMirrorPopup: true,
+        removeClickOffPopup: true
     };
 
 
@@ -37,7 +40,15 @@
     if (modules.webmasterTextAreaFix && windowURL.includes(`https://www.toolkit.uk/setting/webmaster`)) {
         webmasterTextAreaFix();
     }
-
+    if (modules.formNotificationsAbsolute && (windowURL.includes(`https://www.toolkit.uk/formsredesign/elementsview`) || windowURL.includes(`https://www.toolkit.uk/forms/elementsview`))) {
+        formNotificationsAbsolute();
+    }
+    if (modules.resizeCodeMirrorPopup) {
+        resizeCodeMirrorPopup();
+    }
+    if (modules.removeClickOffPopup) {
+        removeClickOffPopup();
+    }
 
     function dropdownToIcons () {
         const dropdown = document.querySelector(".form-control");
@@ -97,6 +108,30 @@ a.copy-btn.copyOn {
             el.setAttribute("rows", "12");
             el.parentNode.classList.replace("col-md-4", "col-md-8");
         });
+    }
+
+    function formNotificationsAbsolute() {
+        GM_addStyle(`
+#ctl00_cphGeneral_ctl00_lblDeleteError, #ctl00_cphGeneral_ctl00_lblDelete, #ctl00_cphGeneral_ctl00_lblError, #ctl00_cphGeneral_ctl00_lblResorted {
+  position: absolute !important;
+}
+`);
+    }
+
+    function resizeCodeMirrorPopup() {
+        GM_addStyle(`.bootstrap-dialog .modal-body .CodeMirror {
+  height: calc(100vh - 200px);
+}`);
+    }
+
+    function removeClickOffPopup() {
+        GM_addStyle(`.modal.bootstrap-dialog {
+  pointer-events: none;
+}
+
+.modal.bootstrap-dialog > div {
+  pointer-events: all;
+}`);
     }
 
 })();
