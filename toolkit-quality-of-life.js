@@ -1,15 +1,15 @@
 // ==UserScript==
 // @name         Toolkit Quality of Life
 // @namespace    https://www.toolkitwebsites.co.uk/
-// @version      0.7
+// @version      0.8
 // @updateURL    https://raw.githubusercontent.com/Will-Toolkit/Toolkit-Userscripts/main/toolkit-quality-of-life.js
 // @downloadURL  https://raw.githubusercontent.com/Will-Toolkit/Toolkit-Userscripts/main/toolkit-quality-of-life.js
 // @description  Small suite of improvements to the Toolkit platform for frontend devs.
 // @author       Will Thrussell
 // @match        https://www.toolkit.uk/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=toolkit.uk
-// @require      https://github.com/Will-Toolkit/Editor-Scripts/raw/main/utils.js?a
-// @require      https://github.com/Will-Toolkit/Editor-Scripts/raw/main/templates.js?a
+// @require      https://github.com/Will-Toolkit/Editor-Scripts/raw/main/utils.js?g
+// @require      https://github.com/Will-Toolkit/Editor-Scripts/raw/main/templates.js?g
 // @grant        GM_addStyle
 // ==/UserScript==
 
@@ -256,7 +256,7 @@
                 if (mutation.type === 'childList') {
                     for (let node of mutation.addedNodes) {
                         if (node.nodeType === Node.ELEMENT_NODE) {
-                            if (node.matches('.bootstrap-dialog .modal-content') || node.querySelector('.bootstrap-dialog .modal-content')) {
+                            if ((node.matches('.bootstrap-dialog .modal-content') || node.querySelector('.bootstrap-dialog .modal-content')) && (node.querySelector(".CodeMirror"))) {
                                 modal = node;
                                 cm = node.querySelector(".CodeMirror")?.CodeMirror;
                                 addEditorStyle();
