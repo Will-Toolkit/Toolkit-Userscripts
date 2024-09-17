@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Flag Large Images
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Flags any images over 250KB.
 // @author       William Thrussell
 // @match        *://*/*
@@ -54,8 +54,12 @@
             }
         });
 
-        document.querySelectorAll("img").forEach(el => {
-            var imageUrl = el.src || el.dataset.src;
+        document.querySelectorAll("*").forEach(el => {
+            var imageUrl = "";
+            if (el.nodeName == "IMG") { imageUrl = el.src || el.dataset.src; }
+            else {
+                imageUrl = getBackgroundImageUrl(el);
+            }
             if (!imageUrl) {return;}
             var blob = null;
             var xhr = new XMLHttpRequest();
@@ -72,6 +76,28 @@
         });
     }
 
+    function getBackgroundImageUrl(div) {
+        // Get the computed style of the element
+        const style = window.getComputedStyle(div);
+
+        // Get the background-image property
+        const backgroundImage = style.backgroundImage;
+
+        // Define a regular expression to match URLs in the background-image
+        const urlPattern = /url\((['"]?)(.*?)\1\)/;
+
+        // Extract the URL from the background-image using the regex
+        const match = backgroundImage.match(urlPattern);
+
+        // Check if a match was found and return the URL part
+        if (match && match[2]) {
+            return match[2]; // match[2] contains the URL
+        }
+
+        // Return null if no URL is found
+        return null;
+    }
+
     function sizeBoom(el, byteSize) {
         el.classList.add("size-boom");
 
@@ -79,16 +105,18 @@
         newTab.classList.add("size-counter");
         newTab.textContent = `${Math.floor(byteSize / 1000)}KB`;
 
-        const center = getCenter(el);
+        // const center = getCenter(el);
 
-        document.body.append(newTab);
-
-        console.log(center);
-
-
-
-        newTab.style.left = center.x + "px";
-        newTab.style.top = center.y + "px";
+        if (el.nodeName != "IMG") {
+            el.append(newTab);
+            el.style.position = "relative";
+        } else {
+            el.parentElement.append(newTab);
+            el.parentElement.style.position = "relative";
+        }
+        newTab.style.left = "50%";
+        newTab.style.top = "50%";
+        newTab.style.transform = "translate(-50%, -50%)";
     }
 
     function getCenter (el) {
