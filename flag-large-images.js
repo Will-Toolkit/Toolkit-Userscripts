@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Flag Large Images
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @updateURL    https://github.com/Will-Toolkit/Toolkit-Userscripts/raw/main/flag-large-images.js
 // @downloadURL  https://github.com/Will-Toolkit/Toolkit-Userscripts/raw/main/flag-large-images.js
 // @description  Flags any images over 250KB.
@@ -63,6 +63,8 @@
                 imageUrl = getBackgroundImageUrl(el);
             }
             if (!imageUrl) {return;}
+            if (!imageUrl.includes('toolkitfiles')) { return; }
+            console.log(imageUrl);
             var blob = null;
             var xhr = new XMLHttpRequest();
             xhr.open('GET', imageUrl, true);
