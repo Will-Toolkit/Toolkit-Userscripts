@@ -2,8 +2,8 @@
 // @name         Save Source Code Scroll
 // @namespace    http://tampermonkey.net/
 // @version      1.0
-// @description  Save Scrolls
-// @author       You
+// @description  Save how far down you're scrolled on the Toolkit editor.
+// @author       Will Thrussell
 // @match        https://www.toolkit.uk/pages/source/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=toolkit.uk
 // @grant        none
