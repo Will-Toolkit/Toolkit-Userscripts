@@ -79,11 +79,11 @@ Refreshes the Content ticket list every 5 minutes, similar to the Support ticket
 
 ---
 
-## [Save Source Code Scroll]((https://github.com/Will-Toolkit/Toolkit-Userscripts/raw/refs/heads/main/save-source-code-scroll.user.js)
+## [Save Source Code Scroll](https://github.com/Will-Toolkit/Toolkit-Userscripts/raw/refs/heads/main/save-source-code-scroll.user.js)
 Saves how far down the browser is scrolled when the the Source Code editor is saved or reloaded.
 
 ---
 
-## [Flag Large Images]((https://github.com/Will-Toolkit/Toolkit-Userscripts/raw/refs/heads/main/flag-large-images.user.js)
+## [Flag Large Images](https://github.com/Will-Toolkit/Toolkit-Userscripts/raw/refs/heads/main/flag-large-images.user.js)
 Highlights and saturates images over 250KB on a page. Can be activated through the right-click Tampermonkey menu, or through the Tampermonkey icon in the browser toolbar.
 ![alt text](assets/tournerbury-large-image.jpg)
