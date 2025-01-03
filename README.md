@@ -56,4 +56,34 @@ Adds Source Code Tools to the popup editor.
 
 ---
 
-## TweaKO
+## [TweaKO](https://github.com/Will-Toolkit/Toolkit-Userscripts/raw/refs/heads/main/tweako.user.js)
+
+Another modular quality-of-life plugin that tweaks things in Toolkit Office.
+
+All individual features can be switched on and off by editing the `modules` object within the script.
+
+### **`addFindAndReplaceLinks`**
+When using TKO's Find feature, search results for Pages, Blogs, Page Folders, and Redirects can all be clicked to link directly to them in the CMS. Requires logging into the client's Toolkit first.
+
+### **`bottomBorderFix`**
+Small aesthetic fix to adjust the grey rounded border at the bottom of the table on all TKO pages.
+
+### **`resizeCSSEditor`**
+Fixes incorrect sizing on the CSS editor, removing the "double scrollbar" effect.
+
+### **`monospaceText`**
+Turns the internal notes & email notes on TKO to fullwidth for the purposes of code readability.
+
+### **`autoRefreshContentList`**
+Refreshes the Content ticket list every 5 minutes, similar to the Support ticket list.
+
+---
+
+## Save Source Code Scroll
+Saves how far down the browser is scrolled when the the Source Code editor is saved or reloaded.
+
+---
+
+## Flag Large Images
+Highlights and saturates images over 250KB on a page. Can be activated through the right-click Tampermonkey menu, or through the Tampermonkey icon in the browser toolbar.
+![alt text](assets/tournerbury-large-image.jpg)
