@@ -4,7 +4,7 @@ A handful of scripts to help with in-house work within the Toolkit.
 
 All the files here are userscripts. You can install userscripts into your browser via the [Tampermonkey](https://www.tampermonkey.net/) extension.
 
-Once the extension is installed, individual userscripts can be installed by clicking on the links below (or copying in the source code above)
+Once the extension is installed, individual userscripts can be installed by copying the links below (or navigating to the source code in the repository)
 
 ---
 
