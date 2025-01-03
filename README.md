@@ -25,7 +25,7 @@ Provides a bunch of convenient changes across the Toolkit CMS.
 Each change is modular and can be turned on or off by editing the "modules" array in the userscript.
 
 ### **`graphicsUploadDropdownToIcons`**
-This changes the dropdown when uploading graphics to be "Icons" be default. No longer necessary.
+This changes the dropdown when uploading graphics to be "Icons" by default. No longer necessary.
 
 ### **`imagesQuickCopy`**
 Adds a new button under each image in the Images module to quickly copy its URL.
