@@ -1,7 +1,9 @@
 // ==UserScript==
 // @name         Save Source Code Scroll
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
+// @updateURL    https://raw.githubusercontent.com/Will-Toolkit/Toolkit-Userscripts/main/save-source-code-scroll.user.js
+// @downloadURL  https://raw.githubusercontent.com/Will-Toolkit/Toolkit-Userscripts/main/save-source-code-scroll.user.js
 // @description  Save how far down you're scrolled on the Toolkit editor.
 // @author       Will Thrussell
 // @match        https://www.toolkit.uk/pages/source/*

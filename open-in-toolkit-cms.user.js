@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Open In Toolkit CMS
 // @namespace    https://toolkitwebsites.co.uk
-// @version      0.4
+// @version      0.5
 // @description  Adds a right-click option to open the page in the Toolkit CMS
-// @updateURL    https://github.com/Will-Toolkit/Toolkit-Userscripts/raw/refs/heads/main/open-in-toolkit-cms.js
-// @downloadURL  https://github.com/Will-Toolkit/Toolkit-Userscripts/raw/refs/heads/main/open-in-toolkit-cms.js
+// @updateURL    https://raw.githubusercontent.com/Will-Toolkit/Toolkit-Userscripts/main/open-in-toolkit-cms.user.js
+// @downloadURL  https://raw.githubusercontent.com/Will-Toolkit/Toolkit-Userscripts/main/open-in-toolkit-cms.user.js
 // @author       Will Thrussell
 // @match        *://*/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=toolkitredesign.co.uk

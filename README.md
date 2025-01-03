@@ -4,7 +4,7 @@ A handful of scripts to help with in-house work within the Toolkit.
 
 All the files here are userscripts. You can install userscripts into your browser via the [Tampermonkey](https://www.tampermonkey.net/) extension.
 
-Once the extension is installed, individual userscripts can be installed by copying the links below (or navigating to the source code in the repository) and opening them in your browser.
+Once the extension is installed, individual userscripts can be installed by copying the links below (or navigating to the source code in the repository) and opening them in your browser. Tampermonkey will automatically prompt to install (or update) the userscript.
 
 ---
 
@@ -53,3 +53,7 @@ Prevents accidentally closing the Source Code popup editor by clicking outside o
 
 ### **`addSourceCodeTools`**
 Adds Source Code Tools to the popup editor.
+
+---
+
+## TweaKO

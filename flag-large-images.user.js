@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         Flag Large Images
 // @namespace    http://tampermonkey.net/
-// @version      0.4
-// @updateURL    https://github.com/Will-Toolkit/Toolkit-Userscripts/raw/main/flag-large-images.user.js
-// @downloadURL  https://github.com/Will-Toolkit/Toolkit-Userscripts/raw/main/flag-large-images.user.js
+// @version      0.5
+// @updateURL    https://raw.githubusercontent.com/Will-Toolkit/Toolkit-Userscripts/main/flag-large-images.user.js
+// @downloadURL  https://raw.githubusercontent.com/Will-Toolkit/Toolkit-Userscripts/main/flag-large-images.user.js
 // @description  Flags any images over 250KB.
 // @author       William Thrussell
 // @match        *://*/*

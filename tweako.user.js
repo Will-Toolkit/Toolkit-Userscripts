@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         TweaKO
 // @namespace    https://www.toolkitwebsites.co.uk/
-// @version      0.3
-// @updateURL    https://raw.githubusercontent.com/Will-Toolkit/Toolkit-Userscripts/main/tweako.js
-// @downloadURL  https://raw.githubusercontent.com/Will-Toolkit/Toolkit-Userscripts/main/tweako.js
+// @version      0.4
+// @updateURL    https://raw.githubusercontent.com/Will-Toolkit/Toolkit-Userscripts/main/tweako.user.js
+// @downloadURL  https://raw.githubusercontent.com/Will-Toolkit/Toolkit-Userscripts/main/tweako.user.js
 // @description  Small frontend tweaks to TKO
 // @author       Will Thrussell
 // @match        https://www.toolkitoffice.co.uk/*
