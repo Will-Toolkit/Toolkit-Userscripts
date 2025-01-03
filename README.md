@@ -2,7 +2,14 @@
 
 A handful of scripts to help with in-house work within the Toolkit.
 
-## Open In Toolkit CMS
+All the files here are userscripts. You can install userscripts into your browser via the [Tampermonkey](https://www.tampermonkey.net/) extension.
+
+Once the extension is installed, 
+
+---
+
+## [Open In Toolkit CMS](https://github.com/Will-Toolkit/Toolkit-Userscripts/raw/refs/heads/main/open-in-toolkit-cms.js)
+
 Allows for quicker finding of pages in the CMS - useful for clients with larger websites.
 This adds a right-click option on all Toolkit pages to open the respective page's editor in the CMS.
 
