@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Flag Large Images
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.6
 // @updateURL    https://raw.githubusercontent.com/Will-Toolkit/Toolkit-Userscripts/main/flag-large-images.user.js
 // @downloadURL  https://raw.githubusercontent.com/Will-Toolkit/Toolkit-Userscripts/main/flag-large-images.user.js
 // @description  Flags any images over 250KB.
