@@ -4,7 +4,7 @@ A handful of scripts to help with in-house work within the Toolkit.
 
 All the files here are userscripts. You can install userscripts into your browser via the [Tampermonkey](https://www.tampermonkey.net/) extension.
 
-Once the extension is installed, 
+Once the extension is installed, individual userscripts can be installed by clicking on the links below (or copying in the source code above)
 
 ---
 
@@ -19,7 +19,7 @@ Additionally, you can press Shift+T to quickly open up the page in the CMS.
 
 ---
 
-## Toolkit Quality of Life
+## [Toolkit Quality of Life](https://github.com/Will-Toolkit/Toolkit-Userscripts/raw/refs/heads/main/toolkit-quality-of-life.js)
 
 Provides a bunch of convenient changes across the Toolkit CMS.
 Each change is modular and can be turned on or off by editing the "modules" array in the userscript.
